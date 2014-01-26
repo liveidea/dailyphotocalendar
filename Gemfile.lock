@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/decioferreira/bootstrap-generators.git
+  revision: 6c0c18fcb6d836fcba7b2e629b8847cb98c3094f
+  specs:
+    bootstrap-generators (3.0.2.2)
+      railties (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +37,8 @@ GEM
     bcrypt-ruby (3.1.2-x86-mingw32)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
+    bootstrap-wysihtml5-rails (0.3.1.23)
+      railties (>= 3.0)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -46,6 +55,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.2)
     figaro (0.7.0)
@@ -130,7 +140,9 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-generators!
   bootstrap-sass (>= 3.0.0.0)
+  bootstrap-wysihtml5-rails
   coffee-rails (~> 4.0.0)
   devise
   figaro
