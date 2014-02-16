@@ -1,4 +1,6 @@
 /*
+*= require bootstrap-wysihtml5/b3
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -6,8 +8,51 @@
  * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
+ * compiled file, but it's generally better to create a new file per style scope. 
  *
- *= require_self
+ *= require_self 
  *= require_tree .
  */
+
+
+.container, main {
+    width: 1270px !important;
+}
+.day {width:170px;height:170px; border:1px solid grey; }
+
+.day span {color:white; font-size:220%; font-weight:bold; position:relative; top:30px;}
+.otherMonth {visibility: hidden;}
+.monthName {text-align:center; font-size:135%; color:#ff6201;padding-bottom:13px; }
+.calendar {margin:0px auto;}
+
+
+
+.top5container {float:left; width:300px;}
+.pagecontainer {float:left;}
+
+#photoshow {text-align:center; margin:0px auto; width:600px; color:#ff6201;}
+#photoshow img {max-width: 400px; max-height: 400px; border-radius:7px;}
+
+#like {}
+#likebox {height: 38px; left: 280px; position: relative; width: 40px;}
+#likebox:hover {background:url("/assets/likeh.png")}
+#likebox span {position:relative; bottom: 28px; left: 0;}
+
+
+#randomholder {border:2px solid grey; width:170px; height:170px;background:url("/assets/qm.jpg")}
+.remote_link {background-color: #5BB75B;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;}
+.remote_link:hover {color:#FFFFFF}
+.remote_link:focus {color:#FFFFFF}

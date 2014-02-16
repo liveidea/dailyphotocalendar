@@ -1,0 +1,8 @@
+<%= @user.email %>
+<%= "We are happy that You created new photo at Dailyphoto.xx" %>
+<%= "Find Your information below:" %>
+<%= @photo.title %>
+<%= @photo.description %>
+<%= image_tag @photo.attachment.url %>
+<%= photo_url(I18n.locale, @photo) %>
+<%= "We will be happy to see You again at Dailyphoto.xx" %>

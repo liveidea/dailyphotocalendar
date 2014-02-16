@@ -1,0 +1,17 @@
+<div class="photo_form">
+  <%= simple_form_for @photo, html: {role:"form"} do |f| %>
+
+    <%= f.input :title %>
+
+    <%= f.input :description %>
+
+    <%= f.association :category, collection: Category.all.map{|el|[el.title, el.id]}, :prompt => 'Please select category' %>
+
+    <%= f.input :attachment, as: :file, :label => "Photo" %>
+
+    <%= f.input :day, as: :date, :discard_hour => true %>
+
+    <%= f.button :submit %>
+    
+  <% end %>
+</div>

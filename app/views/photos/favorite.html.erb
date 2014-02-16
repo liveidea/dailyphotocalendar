@@ -1,0 +1,8 @@
+<div id="randomholder"><div id="random_photo"></div></div><br>
+<%= link_to (t :random_photo), random_photos_path, remote: true, class: "remote_link", data:{type: 'html'}  %>
+
+<% current_user.likes.each do |like| %>
+	<%= image_tag like.photo.attachment.thumb.url %>
+<% end %>
+
+

@@ -21,3 +21,17 @@
 
 en:
   hello: "Hello world"
+
+  home:  "Home"
+  edit_account: "Edit Account"
+  favorite_photos: "My favorite photos"
+  logout: "Logout"
+  login: "Login"
+  sign_up: "Sign Up"
+
+  nature: "Nature"
+  sport:  "Sport"
+  breaking_news: "Breaking News"
+  funny: "Funny"
+
+  random_photo: "Random photo"

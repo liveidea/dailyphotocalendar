@@ -1,0 +1,15 @@
+
+<div id="photoshow">
+	<h2><%= @photo.title %></h2>
+	<%= image_tag @photo.attachment %>
+	<p>
+		<%= @photo.description %>
+	</p>
+
+	<% if user_signed_in? %>
+		<div id="likebox">
+			<%= link_to image_tag("like.png", :id => "like"), like_photo_path(@photo), method: :post, remote: true, class: "like-link" %>
+			<span><%= @photo.likes.count %></span>
+		</div>
+	<% end %>
+</div>

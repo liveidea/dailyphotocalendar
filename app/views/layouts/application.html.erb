@@ -12,9 +12,27 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+
+      <ul class="nav nav-tabs nav-justified">
+        <li class="<%= 'active' if params[:id] == 'Nature' %>">
+          <%= link_to (t :nature), category_path(Category.find_by(title: "Nature")) %>
+        </li>
+        <li class="<%= 'active' if params[:id] == 'Sport' %>">
+          <%= link_to (t :sport), category_path(Category.find_by(title: "Sport")) %>
+        </li>
+        <li class="<%= 'active' if params[:id] == 'Breaking News' %>">
+          <%= link_to (t :breaking_news), category_path(Category.find_by(title: "Breaking News")) %>
+        </li>
+        <li class="<%= 'active' if params[:id] == 'Funny' %>">
+          <%= link_to (t :funny), category_path(Category.find_by(title: "Funny")) %>
+        </li>
+      </ul>
+    
+    <main role="main" class="container">
+      <%= render 'layouts/messages' %>
+        
+          <%= yield %> 
+        
     </main>
   </body>
 </html>
