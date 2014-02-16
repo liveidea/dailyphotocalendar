@@ -12,12 +12,14 @@ gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-generators.git'
 gem 'bootstrap-wysihtml5-rails'
 
+
 gem 'simple_form'
 gem "mini_magick"
 
 gem 'carrierwave', '~> 0.9'
 gem 'devise'
 gem 'figaro'
+
 group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
@@ -25,7 +27,9 @@ end
 group :production do
   gem 'thin'
 end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
 end
+

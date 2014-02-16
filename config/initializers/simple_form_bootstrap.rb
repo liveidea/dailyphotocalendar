@@ -1,3 +1,4 @@
+
 inputs = %w[
   CollectionSelectInput
   DateTimeInput

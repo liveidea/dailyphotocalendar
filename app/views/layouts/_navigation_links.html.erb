@@ -1,5 +1,6 @@
 <%# add navigation links to this file %>
 
+
 	<% if user_signed_in? %>
 	  <li><%= link_to (t :edit_account), edit_user_registration_path %></li>
 	<% end %>
@@ -20,3 +21,4 @@
 	
 		<li><%= link_to (image_tag "en.png"), {locale: "en"} %></li>
 	
+

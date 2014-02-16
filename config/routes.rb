@@ -1,5 +1,4 @@
 Dailyphoto::Application.routes.draw do
- 
   scope '(:locale)' do
 
     resources :categories
@@ -15,6 +14,5 @@ Dailyphoto::Application.routes.draw do
 
     devise_for :users, :controllers => {:registrations => "registrations"}
     resources :users
-
   end
 end

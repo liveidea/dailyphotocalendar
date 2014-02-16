@@ -39,4 +39,5 @@ Dailyphoto::Application.configure do
     password: "Smart."
   }
 
+
 end

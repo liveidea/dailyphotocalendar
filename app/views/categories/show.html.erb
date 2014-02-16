@@ -1,3 +1,4 @@
+
 <%-date = @date || Date.today %>
 <%-next_month_link = link_to (date >> 1).strftime("%B %Y"), {date: date >> 1}%>
 <%-prev_month_link = link_to (date << 1).strftime("%B %Y"), {date: date << 1}%>
@@ -13,3 +14,4 @@
   end
 
 end %>
+
